@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# push myhtop
+docker push kirk91/myhtop
+
+# push myredis
+docker push kirk91/myredis

@@ -1,3 +1,9 @@
 #!/bin/bash
 
 ls -lah
+
+# build myhtop
+docker build -t kirk91/myhtop .
+
+# build myredis
+docker build -t kirk91/myredis -f ./redis/Dockerfile .
