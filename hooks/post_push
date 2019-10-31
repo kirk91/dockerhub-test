@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# tag with commit_id and push
+docker tag $IMAGE_NAME $DOCKER_REPO:$SOURCE_COMMIT
+docker push $DOCKER_REPO:$SOURCE_COMMIT
+
+# tag with another name
+another_repo="${DOCKER_REPO}_brother"
+docker tag $IMAGE_NAME ${another_repo}
+docker push ${another_repo}
