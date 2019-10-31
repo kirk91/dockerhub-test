@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo $IMAGE_NAME, $DOCKER_REPO, $SOURCE_COMMIT
+docker tag $IMAGE_NAME kirk91/myredis
+docker push kirk91/myredis
